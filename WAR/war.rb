@@ -13,23 +13,30 @@ end
 # TODO: You will need to complete the methods in this class
 class Deck
   attr_accessor :deck
+ 
   def initialize
-    @deck = nil # Determine the best way to hold the cards
+    @deck = [] # Determine the best way to hold the cards
   end
 
   # Given a card, insert it on the bottom your deck
   def add_card(card)
+    @deck << card 
+  end
 
+  def shift_deck
   end
 
   # Mix around the order of the cards in your deck
   def shuffle # You can't use .shuffle!
+    @deck.sort_by { rand }
+    # newdeck = []
+    
 
   end
 
   # Remove the top card from your deck and return it
-  def deal_card
-
+  def deal_card(array)
+    @array = []
   end
 
   # Reset this deck with 52 cards
