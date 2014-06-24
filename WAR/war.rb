@@ -23,20 +23,15 @@ class Deck
     @deck << card 
   end
 
-  def shift_deck
-  end
-
   # Mix around the order of the cards in your deck
   def shuffle # You can't use .shuffle!
     @deck.sort_by { rand }
-    # newdeck = []
-    
-
+    # newdeck = [] 
   end
 
   # Remove the top card from your deck and return it
-  def deal_card(array)
-    @array = []
+  def deal_card
+    @deck.shift
   end
 
   # Reset this deck with 52 cards
